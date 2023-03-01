@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/habilidades.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-warning text-dark">
+        <img src="../images/logo.png" alt="logo" height="100px" width="100px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="habilidades.html">Habilidades <span
+                            class="sr-only">(solicitante)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ofertas.html">Crear ofertas de empleos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="verOfertas.html">Ver Ofertas</a>
+                </li>
+              
+            </ul>
+        </div>
+    </nav>
+
+    Nombre Empresa: <input id="nombreEmpresa" style="margin:40px" type="text">
+    Telefono:<input id="telefono" style="margin:60px" type="text">
+    Localizacion: <input id="localizacion" style="margin:48px" type="text">
+    Sueldo: <input id="sueldo" style="margin:20px" type="text">
+    <button id="btn_guardar" onclick="guardar()">Guardar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Localizacion</th>
+                <th>Sueldo</th>
+            </tr>
+        </thead>
+        <tbody id="tablita">
+
+        </tbody>
+    </table>
+    <script src="../js/ofertas.js"></script>
+</body>
+</html>
